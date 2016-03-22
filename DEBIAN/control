@@ -1,0 +1,10 @@
+Package: knife_system
+Version: 3.0.0
+Architecture: all
+Maintainer: Anônimo000 <>
+Installed-Size: 0
+Recommends: gettext-base, dialog, zenity, yad
+Section: utils
+Priority: optional
+Description: Knife Shell Scripts Tool
+ Knife set of shell functions and jobs tools to help user actions.

@@ -1,0 +1,152 @@
+#!/bin/bash
+############################### Informações #############################
+# Autor: Anônimo000                                                     #
+# Data: 05/02/2016                                                      #
+# Descrição: Para inúmeras finalidades descritas no Readme.md           #
+# Versão: 3.0 - os-propose                                              #
+# Data de modificação: 22/03/2016                                       #
+# OS: Apenas para derivados do Debian.                                  #
+#                                                                       #
+# Sinta-se livre para mudar o código, e deixa-lo a seu gosto            #
+# Não retire os devidos créditos                                        #
+#########################################################################
+
+source $sharelib_dir/functions/themes.sh
+source $sharelib_dir/functions/main.sh
+
+########################################################
+#                menu principal                        #
+########################################################
+function main-menu {
+  clear
+
+  echo -e $verm "====================================== ${NORMAL}"
+  sleep 0.1
+  echo -e $verde "            Knife System             ${NORMAL}"
+  sleep 0.1
+  echo -e $verm" ====================================== ${NORMAL}"
+  echo -e "${branco}                             versão 2.1"
+  echo ""
+  sleep 0.1
+  echo -e "${amarelo} A)${verm} Instalar programas${NORMAL}"
+  sleep 0.1
+  echo -e "${amarelo} B)${verm} Remover programas${NORMAL}"
+  sleep 0.1
+  echo -e "${amarelo} C)${verm} Reparar erros de dependências${NORMAL}"
+  sleep 0.1
+  echo -e "${amarelo} D)${verm} Procurar programas${NORMAL}"
+  sleep 0.1
+  echo -e "${amarelo} E)${verm} Procurar por arquivos${NORMAL}"
+  sleep 0.1
+  echo -e "${amarelo} F)${verm} Instalar temas${NORMAL}"
+  sleep 0.1
+  echo -e "${amarelo} G)${verm} Atualizar distribuição${NORMAL}"
+  sleep 0.1
+  echo -e "${amarelo} H)${verm} Remover temas${NORMAL}"
+  sleep 0.1
+  echo -e "${amarelo} I)${verm} Lista de programas${NORMAL}"
+  sleep 0.1
+  echo -e "${amarelo} J)${verm} Firewall${NORMAL}"
+  sleep 0.1
+  echo -e "${amarelo} K)${verm} GIT${NORMAL}"
+  sleep 0.1
+  echo -e "${amarelo} L)${verm} Informações PC${NORMAL}"
+  sleep 0.1
+  echo -e "${amarelo} M)${verm} Baixar arquivos${NORMAL}"
+  sleep 0.1
+
+  echo ""
+  echo -e "${azul}Q)${amarelo} Sair${NORMAL}"
+  echo -e $verde"Escolha uma das opções:"
+
+  read -n1 inst
+}
+
+
+
+######################################
+#      Setar os comandos do menu     #
+#####################################
+function fazer() {
+  reset
+  menu
+
+  while [ inst != '' ]
+  do
+    case $inst in
+      A | a) reset;
+           instal;
+           menu;
+      ;;
+
+      B | b) reset;
+           remov;
+           menu;
+      ;;
+
+      C | c) reset;
+           repair;
+           menu;
+      ;;
+
+      D | d) reset;
+            achar;
+            menu;
+      ;;
+
+      E | e) reset;
+          location;
+          menu;
+      ;;
+
+      F | f) reset;
+          tema;
+          menu;
+      ;;
+
+      G | g) reset;
+          atual;
+          menu;
+      ;;
+
+      H | h) reset;
+          removeTemas;
+          menu;
+      ;;
+
+      I | i) reset;
+          programas;
+          menu;
+      ;;
+
+      J | j) reset;
+          firew;
+          menu;
+      ;;
+
+      K | k) reset;
+          github;
+          menu;
+      ;;
+
+      L | l)reset;
+        infos;
+        menu;
+      ;;
+
+      M | m)reset;
+         down;
+         menu;
+      ;;
+
+      Q | q) reset;
+         exit;
+      ;;
+
+      *) reset;
+         menu;
+      ;;
+    esac
+  done
+}
+

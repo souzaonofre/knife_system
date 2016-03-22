@@ -1,21 +1,27 @@
- Script em bash desenvolvido por Anônimo000.
+#Knife System
 
- Prove facilidade e rapidez em algumas tarefas,
+#####Autor: Anônimo000
+
+
+ Provê facilidade e rapidez em algumas tarefas,
 Nele você irá encontrar como o próprio nome já diz knife system ( canivete do sistema ), inúmeras
 ferramentas para auxília-lo em suas tarefas sejam elas uma simples instalação de programas até um
 pequeno firewall que o script prove.
 
- ATENÇÃO! Esse script só funcionará em derivados do debian ( Ubuntu, Mint, ElementaryOS, DuZeru, e etc... ).
+###                                              ATENÇÃO!
+ 
+  Esse script só funcionará em derivados do debian ( Ubuntu, Mint, ElementaryOS, DuZeru, e etc... ). 
+  E para melhor proveito deve-se estar conectado a internet.
+  O script irá obter seu endereço IP externo, mas nada será arquivado ou enviado, se tiver receio confira o script, logo no   inicio a variável "myip", e mais a abaixo no comentário "Informações do hardware e etc....".
 
-
-
+![Imagem](http://i.imgur.com/4UUNOk9.png)
 
 
  Como estão organizados os menus: 
 
  Opção A - Instalação de programas digitando apenas o nome do mesmo;
   
- Opção B - Remover programas diigitando apenas o nome do mesmo;
+ Opção B - Remover programas digitando apenas o nome do mesmo;
 
  Opção C - Reparar erros nas dependências ( Em algumas situações isso não vai ser possível );
  
@@ -34,7 +40,7 @@ pequeno firewall que o script prove.
     Opção 3 -  Move a pasta do ícone para /usr/share/icons, facilitando esse processo, porém para instalar defitivamente, deverá ter
              instalado um programa como 'Gnome-Tweak-Tool' em seu sistema.
 
-    Opção 4 - Instalado o programa que lhe permitirá a intalação dos tema, ícones e cursores.
+        Opção 4 - Instalado o programa que lhe permitirá a intalação dos tema, ícones e cursores.
 
  
  Opção G - Atualiza a sua distribuição para uma versão mais recente por exemplo atualiza do ubuntu 14.04 LTS para o 16.04 LTS;
@@ -75,7 +81,29 @@ pequeno firewall que o script prove.
      Opção 5 - Equivale á git init
 
      Opção 6 - Equivale á git status
+     
+  Opção L - Você será levado a um submenu onde encontrará as seguintes opções:
 
+     Opção 1 - Obter informações sobre sua rede interna.
+   
+     Opção 2 - Mostará informações do seu HD, seu CPU e sua memória RAM.
+
+     Opção 3 - Mostará informções sobre o kernel do sistema, sua versão por exemplo.
+
+     Opção 4 - Mostraá a arquitetura do seu processador pode variar de 64bits a 32bits.
+     
+     Opção 5 - Usa o escaner de portas nmap, para verificar as portas e serviços rodando na sua máquina.
+
+  Opção M - Você será levado para um submenu onde encontrará opções para downloads de arquivos:
+
+     Opção 1 - Nesta opção você deverá digitar o link do arquivo que pretende baixar.
+               Em seguida digite o caminho do para onde o arquivo irá ser baixado, e digite o nome dele,
+               não esqueça de colocar a extensão do arquivo (ex: .deb-.txt-.tar.gz).
+
+     Opção 2 - Nesta opção se você já tiver iniciado algum download anteriormente ele será encarregado de continua-lo.
+
+     Opção 3 - Nesta opção você irá deletar os arquivos que contém o o link e o diretório, do arquivo que iria a ser baixado
+               este arquivo de log está contido em /var/log/KS_*.log
 
 
  Sinta-se livre em edita-lo a seu gosto.
@@ -87,16 +115,17 @@ pequeno firewall que o script prove.
  
             <----------------------------EXECUTANDO O SCRIPT ----------------------------------->
 
- Para um melhor proveito do script por favor instale-o bastando apenas executar o script de instalação com o comando
-
+ Para um melhor proveito do script por favor instale-o bastando apenas executar o script de instalação com o comando.
+ Entre na pasta corrente do script e execute os seguintes comandos:
+ 
  # chmod +x instalar.sh <-- Para dar permissões de execução, o mesmo deve ser feito com knife caso não queira instala-lo
- # bash instalar.sh
+ # bash instalar.sh <-- Instalar
 
  o script fará todo o resto.
 
  <--Caso não queira instala-lo basta abrir o terminal, entrar na pasta corrente do script com: -->
 
-  $ cd nome_da_pasta/knife_system-x.x <-- Onde x.x é a versão do script
+  $ cd ~/knife_system-x.x <-- Onde x.x é a versão do script
   
  Entrar como usuário root com o comando:
 
@@ -110,13 +139,28 @@ pequeno firewall que o script prove.
  
  # bash knife
 
+####                             ATENÇÃO!
 
-
+  Esse script requer o pacote pv instalado, para exibição da barra de progresso na execução de suas tarefas
+  portanto caso não possua ele instalado o script se encarregará de fazer o mesmo. 
  
+  pv é um pequeno programa que serve para criar uma barra e progresso enquanto se é feito algum serviço em
+  segundo plano, caso queira testar o pv e conferir como ele funciona, mostrarei um exemplo de uso:
+ 
+  $sudo su <-- Entre como usuário root
+ 
+  #apt-get install pv <-- comando para instalar o pv caso não possua
+ 
+  #apt-get update | pv -W <-- Exemplo de uso do comando pv
+ 
+  caso queira conferir a documentação consulte em /usr/share/doc/pv
+
+
+
+
 
 
  Atualizações são lançadas constântementes. Porém não se á um site ou uma equipe por trás do script portanto
 fique sempre de olho no meu git para conferir as atualizações.
 
 contato: anonimo000hacker@gmail.com
-

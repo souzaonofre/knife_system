@@ -1,0 +1,78 @@
+###### versão 1.0 #########################
+#                                         #
+# Criação do menu, das funcões.           #
+#                                         #
+# Instalação dos programas.               #
+#                                         #
+# Automatização nas tarefas.              #
+###########################################
+#
+####### versão 1.1 ########################
+# Nova opção, instalação de temas.        #
+#                                         #
+# Erro de esquema das cores concertado.   #
+###########################################
+#
+####### versão 1.2 ########################
+# Nova opção, atualização da distribuição.#
+###########################################
+#
+####### versão 1.3 ########################
+# Nova opção, remover temas               #
+###########################################
+#
+###### versão 1.4 #########################
+# Remoção da lista de programas de insta- #
+# lação e movido para um sub-menu.        #
+#                                         #
+# Nova opção, Lista de programas          #
+#                                         #
+# Efeitos no menu príncipal               #
+###########################################
+#
+###### versão 1.5 #########################
+# Nova opção, Firewall                    #
+#                                         #
+# Erro na instalação do Gnumeric          #
+#                                         #
+###########################################
+#
+##### versão 1.6 ##########################
+# Firewall permanente adicionado          #
+#                                         #
+# Nova opção, GIT                         #
+#                                         #
+# Aperfeiçoado algumas funções            #
+#                                         #
+# Script mais discreto sem mostrar muitas mensagens
+#                                         #
+# Mensagens de log são geradas            #
+###########################################
+#
+###### versão 1.7 #########################
+# Aperfeçoamentos nas funções             #
+###########################################
+#
+###### versão 1.8 #########################
+# Barra de progresso implantada           #
+#                                         #
+# Pequenos bugs corrigidos                #
+###########################################
+#
+####### versão 1.9 ########################
+# Nova opção, Informações do PC           #
+#                                         #
+# Pode-se agora mostar o IP externo       #
+###########################################
+#
+####### versão 2.0  #######################
+# Melhorado a verificação de conexão      #
+#                                         #
+# Nmap adicionadoas opções de infos       #
+#                                         #
+# Concertado bug de obtenção de endereço IP
+###########################################
+#
+####### versão 2.1 ########################
+# Nova opção Baixar arquivos              #
+###########################################
